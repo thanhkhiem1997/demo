@@ -1,0 +1,59 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "thang",
+        "ten_sp"
+      ]
+    },
+    "utter_gioi_tinh": {
+      "slots": []
+    },
+    "utter_cha_de": {
+      "slots": []
+    },
+    "utter_tim_kiem": {
+      "slots": []
+    },
+    "utter_cam_on": {
+      "slots": []
+    },
+    "utter_tam_biet": {
+      "slots": []
+    },
+    "utter_nam_sinh": {
+      "slots": []
+    },
+    "utter_chao_hoi": {
+      "slots": []
+    },
+    "utter_hoi_ten": {
+      "slots": []
+    },
+    "utter_gia_sp": {
+      "slots": []
+    },
+    "utter_khuyen_mai": {
+      "slots": []
+    },
+    "utter_hoi_chuc_nang": {
+      "slots": []
+    }
+  },
+  "python": "3.6.8",
+  "max_histories": [
+    1,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ],
+  "trained_at": "20191006-201805",
+  "rasa_core": "0.14.5",
+  "tensorflow": "1.13.2",
+  "sklearn": "0.20.4"
+}

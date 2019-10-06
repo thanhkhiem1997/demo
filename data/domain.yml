@@ -1,0 +1,68 @@
+intents:
+# Ý đồ khách hàng
+ - chao_hoi
+ - cam_on
+ - tam_biet
+ - hoi_chuc_nang
+ - hoi_ten
+ - gioi_tinh
+ - nam_sinh
+ - cha_de
+ - gia_sp
+ - tim_kiem
+ - khuyen_mai
+
+entities:
+- ten_sp
+- thang
+
+slots:
+  ten_sp:
+    type: text
+  thang:
+    type: text
+
+templates:
+# Bot trả lời
+ utter_chao_hoi:
+  - text: "Chào Quý khách! Rất hân hạnh được phục vụ quý khách?"
+  - text: "Chào Quý khách! Tôi có thể giúp gì cho bạn?"
+ utter_tam_biet:
+  - text: "Chào tạm biệt và mong sớm gặp lại quý khách!"
+  - text: "Chào tạm biệt và chúc quý khách một ngày tốt lành!"
+ utter_cam_on:
+  - text: "Cảm ơn quý khách quá khen ah!"
+  - text: "Dạ không có gì, đó là trách nhiệm của em mà!"
+ utter_hoi_chuc_nang:
+  - text: "Chúng tôi có thể giúp bạn xem các sản phẩm, xem các chương trình Khuyến mãi và đặt hàng trực tuyến."
+ utter_hoi_ten:
+  - text: "Tôi là trợ lý ảo!"
+  - text: "Dạ thưa. Tôi là trợ lý ảo"
+ utter_gioi_tinh:
+  - text: "Dạ thưa. Tôi không có giới tính"
+ utter_nam_sinh:
+  - text: "Dạ thưa. Tôi được phát triển từ 2019"
+ utter_cha_de:
+  - text: "Dạ thưa. Tôi được phát triển từ bởi anh Khiêm"
+ utter_gia_sp:
+  - text: "Chức năng này hiện tại tôi chưa học"
+ utter_tim_kiem:
+  - text: "Tôi chưa học chức năng này"
+ utter_khuyen_mai:
+  - text: "Rất tiếc tôi chưa học chức năng này"
+ utter_unclear:
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+
+actions:
+ - utter_chao_hoi
+ - utter_tam_biet
+ - utter_unclear
+ - utter_hoi_chuc_nang
+ - utter_cam_on
+ - utter_hoi_ten
+ - utter_gioi_tinh
+ - utter_nam_sinh
+ - utter_cha_de
+ - utter_gia_sp
+ - utter_tim_kiem
+ - utter_khuyen_mai

@@ -1,0 +1,83 @@
+%YAML 1.1
+---
+actions:
+- utter_chao_hoi
+- utter_tam_biet
+- utter_unclear
+- utter_hoi_chuc_nang
+- utter_cam_on
+- utter_hoi_ten
+- utter_gioi_tinh
+- utter_nam_sinh
+- utter_cha_de
+- utter_gia_sp
+- utter_tim_kiem
+- utter_khuyen_mai
+config:
+  store_entities_as_slots: true
+entities:
+- ten_sp
+- thang
+forms: []
+intents:
+- chao_hoi:
+    use_entities: true
+- cam_on:
+    use_entities: true
+- tam_biet:
+    use_entities: true
+- hoi_chuc_nang:
+    use_entities: true
+- hoi_ten:
+    use_entities: true
+- gioi_tinh:
+    use_entities: true
+- nam_sinh:
+    use_entities: true
+- cha_de:
+    use_entities: true
+- gia_sp:
+    use_entities: true
+- tim_kiem:
+    use_entities: true
+- khuyen_mai:
+    use_entities: true
+slots:
+  ten_sp:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  thang:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_cam_on:
+  - text: Cảm ơn quý khách quá khen ah!
+  - text: Dạ không có gì, đó là trách nhiệm của em mà!
+  utter_cha_de:
+  - text: Dạ thưa. Tôi được phát triển từ bởi anh Khiêm
+  utter_chao_hoi:
+  - text: Chào Quý khách! Rất hân hạnh được phục vụ quý khách?
+  - text: Chào Quý khách! Tôi có thể giúp gì cho bạn?
+  utter_gia_sp:
+  - text: '{ten_sp} Chức năng này hiện tại tôi chưa học'
+  utter_gioi_tinh:
+  - text: Dạ thưa. Tôi không có giới tính
+  utter_hoi_chuc_nang:
+  - text: Chúng tôi có thể giúp bạn xem các sản phẩm, xem các chương trình Khuyến
+      mãi và đặt hàng trực tuyến.
+  utter_hoi_ten:
+  - text: Tôi là trợ lý ảo!
+  - text: Dạ thưa. Tôi là trợ lý ảo
+  utter_khuyen_mai:
+  - text: '{thang} Rất tiếc tôi chưa học chức năng này'
+  utter_nam_sinh:
+  - text: Dạ thưa. Tôi được phát triển từ 2019
+  utter_tam_biet:
+  - text: Chào tạm biệt và mong sớm gặp lại quý khách!
+  - text: Chào tạm biệt và chúc quý khách một ngày tốt lành!
+  utter_tim_kiem:
+  - text: '{ten_sp} Tôi chưa học chức năng này'
+  utter_unclear:
+  - text: 'Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. '
